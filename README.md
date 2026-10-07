@@ -6,6 +6,8 @@
 
 ## Status
 
+**Published release:** [v1.0.0](https://github.com/econgreg-hub/Math-Theory/releases/tag/v1.0.0), published by GitHub on **7 October 2026 at 16:18:40 UTC (12:18:40 p.m. EDT)**. Download the [PDF](https://github.com/econgreg-hub/Math-Theory/releases/download/v1.0.0/conditional-corollaries.pdf) and [LaTeX source archive](https://github.com/econgreg-hub/Math-Theory/releases/download/v1.0.0/arxiv-source-v1.zip). The published PDF was downloaded anonymously and its SHA-256 matched the prepared manuscript. See `PUBLICATION-STATUS.json` for the receipt. The v1.0.0 tag and attached manuscript are retained unchanged; this metadata update records the completed publication.
+
 Version 1.0.0 was prepared on 7 October 2026. This is the public source repository for a research preprint, conditional on the cited upstream manuscripts. It has not undergone external peer review. No claim of established historical priority, independent certification of the upstream proofs, or formal verification is made.
 
 **Read the paper:** [conditional-corollaries.pdf](conditional-corollaries.pdf). **Repository:** https://github.com/econgreg-hub/Math-Theory. A DOI and arXiv identifier have not been assigned.

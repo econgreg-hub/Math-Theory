@@ -6,6 +6,7 @@ authors:
     given-names: John Gregory
     affiliation: "Center for Economic Analysis, Middle Georgia State University"
 version: 1.0.0
+date-released: 2026-10-07
 url: "https://github.com/econgreg-hub/Math-Theory"
 repository-code: "https://github.com/econgreg-hub/Math-Theory"
 license: CC-BY-4.0
@@ -18,7 +19,7 @@ preferred-citation:
       affiliation: "Center for Economic Analysis, Middle Georgia State University"
   year: 2026
   version: 1.0.0
-  url: "https://github.com/econgreg-hub/Math-Theory"
+  url: "https://github.com/econgreg-hub/Math-Theory/releases/tag/v1.0.0"
 keywords:
   - conditional corollaries
   - primitive roots

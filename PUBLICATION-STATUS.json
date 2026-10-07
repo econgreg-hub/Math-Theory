@@ -1,10 +1,32 @@
 {
-  "prepared_utc": "2026-10-07T14:58:34.767242+00:00",
-  "status": "publication_in_progress",
-  "public_url": "https://github.com/econgreg-hub/Math-Theory",
+  "status": "publicly_published_on_github",
+  "version": "1.0.0",
+  "repository_url": "https://github.com/econgreg-hub/Math-Theory",
+  "github_release_url": "https://github.com/econgreg-hub/Math-Theory/releases/tag/v1.0.0",
+  "release_id": 405947459,
+  "release_published_at_utc": "2026-10-07T16:18:40Z",
+  "release_published_at_eastern": "2026-10-07T12:18:40-04:00",
+  "manuscript_commit": "517b35d66405a1f8eb7696e8d204c585a9764202",
+  "manuscript_commit_url": "https://github.com/econgreg-hub/Math-Theory/commit/517b35d66405a1f8eb7696e8d204c585a9764202",
+  "manuscript_commit_timestamp_utc": "2026-10-07T16:14:57Z",
+  "pdf_sha256": "a516921d0f596ce346ebd6c8754721cd7c2173c2c22a469df302b3ac7fa73d36",
+  "anonymous_pdf_download_verified": true,
+  "assets": [
+    {
+      "name": "arxiv-source-v1.zip",
+      "bytes": 12270,
+      "sha256": "d0c112c6c535ba0755be15bdc80d17e87bad1bdf1b3e9f73b8b380f8021589a8",
+      "url": "https://github.com/econgreg-hub/Math-Theory/releases/download/v1.0.0/arxiv-source-v1.zip"
+    },
+    {
+      "name": "conditional-corollaries.pdf",
+      "bytes": 339152,
+      "sha256": "a516921d0f596ce346ebd6c8754721cd7c2173c2c22a469df302b3ac7fa73d36",
+      "url": "https://github.com/econgreg-hub/Math-Theory/releases/download/v1.0.0/conditional-corollaries.pdf"
+    }
+  ],
   "doi": null,
   "arxiv_id": null,
-  "github_release_url": null,
   "publication_authorized_by_user": true,
-  "remaining_prerequisite": "Verify manuscript commit and create versioned release; DOI and arXiv deposit remain separate."
+  "note": "The release timestamp is GitHub's published_at value. Git commit timestamps are recorded separately and are not independent evidence of the time content became public. This record documents disclosure and attribution; it does not establish correctness or absence of prior work."
 }

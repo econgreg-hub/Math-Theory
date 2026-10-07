@@ -24,7 +24,8 @@ LICENSE
 CC BY 4.0
 
 PUBLICATION DATE
-Use the date of actual first public disclosure; do not backdate to preparation.
+GitHub release v1.0.0 published 7 October 2026 at 16:18:40 UTC (12:18:40 p.m. EDT).
+https://github.com/econgreg-hub/Math-Theory/releases/tag/v1.0.0
 
 DOI / ORCID
 Not assigned in this package. Enter only actual identifiers.
