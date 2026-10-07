@@ -1,5 +1,5 @@
 {
-  "status": "publicly_published_on_github",
+  "status": "publicly_published_on_github_and_zenodo",
   "version": "1.0.0",
   "repository_url": "https://github.com/econgreg-hub/Math-Theory",
   "github_release_url": "https://github.com/econgreg-hub/Math-Theory/releases/tag/v1.0.0",
@@ -25,8 +25,40 @@
       "url": "https://github.com/econgreg-hub/Math-Theory/releases/download/v1.0.0/conditional-corollaries.pdf"
     }
   ],
-  "doi": null,
+  "doi": "10.5281/zenodo.23219812",
   "arxiv_id": null,
   "publication_authorized_by_user": true,
-  "note": "The release timestamp is GitHub's published_at value. Git commit timestamps are recorded separately and are not independent evidence of the time content became public. This record documents disclosure and attribution; it does not establish correctness or absence of prior work."
+  "note": "The release timestamp is GitHub's published_at value. Git commit timestamps are recorded separately and are not independent evidence of the time content became public. This record documents disclosure and attribution; it does not establish correctness or absence of prior work.",
+  "concept_doi": "10.5281/zenodo.23219811",
+  "zenodo": {
+    "record_id": 23219812,
+    "record_url": "https://zenodo.org/records/23219812",
+    "api_url": "https://zenodo.org/api/records/23219812",
+    "publication_date": "2026-10-07",
+    "record_created_at_utc": "2026-10-07T18:00:01.178178+00:00",
+    "record_updated_at_utc": "2026-10-07T18:00:01.569107+00:00",
+    "submitted": true,
+    "access_right": "open",
+    "license": "cc-by-4.0",
+    "anonymous_public_api_verified": true,
+    "verification_date_utc": "2026-10-07",
+    "assets": [
+      {
+        "name": "conditional-corollaries.pdf",
+        "bytes": 339152,
+        "md5": "abab319d20c90e126aadc053fec92e5a",
+        "sha256": "a516921d0f596ce346ebd6c8754721cd7c2173c2c22a469df302b3ac7fa73d36",
+        "url": "https://zenodo.org/api/records/23219812/files/conditional-corollaries.pdf/content",
+        "public_metadata_checksum_matches_local_file": true
+      },
+      {
+        "name": "arxiv-source-v1.zip",
+        "bytes": 12270,
+        "md5": "cb633d092513bfdc3b6d7a6ada71f6f9",
+        "sha256": "d0c112c6c535ba0755be15bdc80d17e87bad1bdf1b3e9f73b8b380f8021589a8",
+        "url": "https://zenodo.org/api/records/23219812/files/arxiv-source-v1.zip/content",
+        "public_metadata_checksum_matches_local_file": true
+      }
+    ]
+  }
 }

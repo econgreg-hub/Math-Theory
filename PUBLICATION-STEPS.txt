@@ -3,13 +3,17 @@ PUBLIC DISCLOSURE AND ATTRIBUTION: VERSION 1.0.0
 WHAT THIS PACKAGE IS
 A completed, source-backed preprint and upload package. The public GitHub
 repository is https://github.com/econgreg-hub/Math-Theory. Consult its actual
-commit and release records for disclosure times. No DOI or arXiv identifier
-has been issued. Preparation dates do not establish public priority.
+commit and release records for disclosure times. The Zenodo preprint was
+published on 7 October 2026 with DOI 10.5281/zenodo.23219812:
+https://zenodo.org/records/23219812
+No arXiv identifier has been issued. Preparation dates do not establish
+public priority.
 
-RECOMMENDED ROUTE
-Publish the PDF and source ZIP as one public Zenodo preprint record to obtain
-a persistent DOI and public date. Keep a public GitHub repository for the
-source and revision history. Pursue arXiv for mathematical discoverability;
+CURRENT STATUS AND NEXT STEP
+The PDF and source ZIP are published together on Zenodo. GitHub retains the
+source, revision history and original v1.0.0 release. The deposit and release
+steps below are retained as a record of the workflow; do not create another
+unrelated deposit of the same version. Pursue arXiv for discoverability;
 first-time/new-category endorsement and moderation may delay or decline it.
 
 ZENODO: DIRECT DEPOSIT

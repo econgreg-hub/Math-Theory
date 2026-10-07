@@ -27,5 +27,20 @@ PUBLICATION DATE
 GitHub release v1.0.0 published 7 October 2026 at 16:18:40 UTC (12:18:40 p.m. EDT).
 https://github.com/econgreg-hub/Math-Theory/releases/tag/v1.0.0
 
-DOI / ORCID
-Not assigned in this package. Enter only actual identifiers.
+ZENODO PUBLICATION
+Published 7 October 2026, version 1.0.0, open access under CC BY 4.0.
+https://zenodo.org/records/23219812
+
+VERSION DOI (CITE THIS MANUSCRIPT)
+10.5281/zenodo.23219812
+https://doi.org/10.5281/zenodo.23219812
+
+ALL-VERSIONS DOI
+10.5281/zenodo.23219811
+https://doi.org/10.5281/zenodo.23219811
+
+ARXIV IDENTIFIER
+Not assigned.
+
+ORCID
+Not supplied.

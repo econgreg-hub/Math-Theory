@@ -10,7 +10,9 @@
 
 Version 1.0.0 was prepared on 7 October 2026. This is the public source repository for a research preprint, conditional on the cited upstream manuscripts. It has not undergone external peer review. No claim of established historical priority, independent certification of the upstream proofs, or formal verification is made.
 
-**Read the paper:** [conditional-corollaries.pdf](conditional-corollaries.pdf). **Repository:** https://github.com/econgreg-hub/Math-Theory. A DOI and arXiv identifier have not been assigned.
+**Archived preprint:** Published on Zenodo on **7 October 2026**, version 1.0.0. Cite this version using DOI [10.5281/zenodo.23219812](https://doi.org/10.5281/zenodo.23219812). The [public record](https://zenodo.org/records/23219812) contains the PDF and LaTeX source archive under CC BY 4.0. The DOI for all versions is [10.5281/zenodo.23219811](https://doi.org/10.5281/zenodo.23219811).
+
+**Read the paper:** [conditional-corollaries.pdf](conditional-corollaries.pdf). **Repository:** https://github.com/econgreg-hub/Math-Theory. No arXiv identifier has been assigned.
 
 Preparation dates and content hashes are not public priority timestamps. The public repository creation/release record and any published archival DOI provide the actual disclosure record. Do not describe a private draft or a reserved DOI as published.
 
@@ -30,7 +32,7 @@ These are transfer arguments and corollaries. The source authors retain credit f
 - `conditional-corollaries.pdf`: the manuscript.
 - `conditional-corollaries.tex`, `algebra_geometry_sections.tex`, `references.tex`: complete LaTeX source.
 - `source-manifest.json`: exact upstream manuscript paths, revision and SHA-256 hashes.
-- `CITATION.cff`: citation metadata; no DOI is invented or inserted before publication.
+- `CITATION.cff`: citation metadata with the published Zenodo version DOI.
 - `.zenodo.json`: metadata for a Zenodo-linked GitHub release.
 - `CONTRIBUTIONS.txt`: precise credit and AI disclosure.
 - `PUBLICATION-STEPS.txt`: deposit and versioning instructions.
@@ -48,6 +50,8 @@ pdflatex -interaction=nonstopmode -halt-on-error conditional-corollaries.tex
 ## Citation and corrections
 
 Cite John Gregory George as the author, with the full title, version and actual public record URL or DOI. The AI contribution and Jarvis acknowledgement are part of the manuscript and should remain with redistributed copies. Do not list OpenAI as an institutional coauthor or imply its endorsement of this downstream note.
+
+George, J. G. (2026). *Conditional Corollaries from the October 2026 OpenAI Mathematics Release* (Version 1.0.0) [Preprint]. Zenodo. https://doi.org/10.5281/zenodo.23219812
 
 Retain version 1.0 after publication. Corrections should be made in a new tagged release and corresponding archival version, with a clear changelog. If an earlier source for a recorded corollary is identified, cite it and correct any priority description.
 
