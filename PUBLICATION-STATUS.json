@@ -1,0 +1,10 @@
+{
+  "prepared_utc": "2026-10-07T14:58:34.767242+00:00",
+  "status": "publication_in_progress",
+  "public_url": "https://github.com/econgreg-hub/Math-Theory",
+  "doi": null,
+  "arxiv_id": null,
+  "github_release_url": null,
+  "publication_authorized_by_user": true,
+  "remaining_prerequisite": "Verify manuscript commit and create versioned release; DOI and arXiv deposit remain separate."
+}

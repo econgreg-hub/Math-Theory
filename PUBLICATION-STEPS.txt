@@ -1,0 +1,76 @@
+PUBLIC DISCLOSURE AND ATTRIBUTION: VERSION 1.0.0
+
+WHAT THIS PACKAGE IS
+A completed, source-backed preprint and upload package. The public GitHub
+repository is https://github.com/econgreg-hub/Math-Theory. Consult its actual
+commit and release records for disclosure times. No DOI or arXiv identifier
+has been issued. Preparation dates do not establish public priority.
+
+RECOMMENDED ROUTE
+Publish the PDF and source ZIP as one public Zenodo preprint record to obtain
+a persistent DOI and public date. Keep a public GitHub repository for the
+source and revision history. Pursue arXiv for mathematical discoverability;
+first-time/new-category endorsement and moderation may delay or decline it.
+
+ZENODO: DIRECT DEPOSIT
+1. Visit https://zenodo.org and sign in (or create your own account).
+2. Choose New upload. Upload conditional-corollaries.pdf and the prepared
+   source ZIP. Do not upload unrelated private chat exports or Jarvis logs.
+3. Choose the resource type Publication / Preprint (or the corresponding
+   current form label).
+4. Enter the exact manuscript title and author John Gregory George, with
+   the affiliation printed in the PDF. Use your own ORCID if you have one;
+   none has been guessed or supplied here.
+5. Paste the abstract and the AI contribution description from METADATA.txt.
+6. Select public file access and CC BY 4.0. Use the actual first public
+   publication date. A reserved DOI is not a published record.
+7. Preview the complete record and publish. Verify that an anonymous reader
+   can open the record and download the PDF, and that the DOI resolves.
+8. Preserve the published URL, version DOI and service-recorded publication
+   date. Add them to CITATION.cff and the README in a subsequent source
+   revision without altering the archived first version.
+
+GITHUB: SOURCE AND RELEASE
+1. Use the connected GitHub account econgreg-hub. Publication of this note
+   was authorized by John Gregory George.
+2. Use the PUBLIC repository created by George: econgreg-hub/Math-Theory.
+3. Upload the package files, including the PDF, three TeX files, README,
+   CITATION.cff, CONTRIBUTIONS.txt, LICENSE.txt and source-manifest.json.
+4. Create release v1.0.0 and attach the PDF and source ZIP. State that the
+   results are conditional and novelty is unestablished.
+5. If choosing GitHub-to-Zenodo instead of a direct Zenodo deposit, first
+   connect Zenodo to GitHub and enable archiving for this repository. Then
+   create the release; Zenodo archives enabled public releases and issues
+   a DOI. Avoid creating a second unrelated DOI for identical content.
+6. Verify the public repository and release while logged out. A private
+   repository, local Git commit or unannounced draft is not public disclosure.
+
+ARXIV
+1. Register/log in using your own author account and institutional email.
+2. Begin a new submission; a first submission or new category requires
+   endorsement under current rules. The primary arithmetic results fit
+   math.NT; the broader note may be reclassified by moderators.
+3. Upload the three TeX source files (the arXiv-source ZIP provided here).
+   Enter the title, abstract and John Gregory George as author.
+4. Keep the explicit AI disclosure and Jarvis acknowledgement in the paper.
+   arXiv's policy says generative AI tools should not be listed as authors.
+5. Inspect the compiled PDF and complete the required author attestations
+   accurately. The named human author is responsible for all content.
+6. Submit for moderation. Do not call it published or claim an arXiv ID
+   until an actual record is announced. This package is not a guarantee
+   of endorsement, acceptance, peer review or mathematical correctness.
+
+WHAT THE RECORD DOES AND DOES NOT ESTABLISH
+A public archived record identifies the disclosed content, attribution,
+version and publication date. It supports a priority claim if the work is
+correct and there is no earlier disclosure. It cannot prove absence of
+prior work, guarantee citation/credit, or validate the source theorems.
+SHA-256 hashes identify bytes; they do not independently establish a date.
+
+OFFICIAL GUIDANCE CHECKED
+https://help.zenodo.org/docs/deposit/create-new-upload/
+https://help.zenodo.org/docs/deposit/describe-records/reserve-doi/
+https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content
+https://info.arxiv.org/help/submit/index.html
+https://info.arxiv.org/help/endorsement.html
+https://info.arxiv.org/help/moderation/index.html

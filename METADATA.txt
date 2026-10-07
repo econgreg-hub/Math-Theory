@@ -1,0 +1,30 @@
+TITLE
+Conditional Corollaries from the October 2026 OpenAI Mathematics Release
+
+CREATOR
+John Gregory George
+Center for Economic Analysis, Middle Georgia State University
+
+RESOURCE TYPE
+Preprint
+
+VERSION
+1.0.0
+
+ABSTRACT
+We record selected conditional consequences of manuscripts in the October 2026 OpenAI mathematics release. A primitive-root prime lower bound and a quantitative progression-free-set estimate imply disjoint arithmetic-progression packings covering a proportion tending to one of the relevant primes in every sufficiently large dyadic interval. A related matching argument gives prime-polynomial differences. Low-Selmer-corank BSD and quadratic-twist rank statistics imply density-one full BSD over each fixed multiquadratic field; in degree four, at least one third in lower density of rational signed-squarefree parameters give full-BSD twists of rank at least two. Further consequences concern nearly orthogonal binary circulants, Hodge classes on products of K3-associated cubic fourfolds, and idempotents in a 2-adic completion. We state dependencies explicitly and prove the transfer arguments. The cited preprint theorems are assumed, not reproved or certified. Historical priority is not established.
+
+CONTRIBUTIONS AND AI DISCLOSURE
+John Gregory George conceived and directed the project. ChatGPT (OpenAI) performed the mathematical synthesis, proof development, source checks and drafting, with parallel AI review passes that are not external human peer review. Jarvis, George's local AI research system, is acknowledged for motivation and inspiration. The cited source authors retain credit for their input theorems. No institutional endorsement is implied.
+
+ACCESS
+Public
+
+LICENSE
+CC BY 4.0
+
+PUBLICATION DATE
+Use the date of actual first public disclosure; do not backdate to preparation.
+
+DOI / ORCID
+Not assigned in this package. Enter only actual identifiers.

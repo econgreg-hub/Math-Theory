@@ -1,0 +1,11 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+The original note and its source files are licensed under CC BY 4.0, to the
+extent copyright applies. Preserve the author attribution, AI contribution
+disclosure and acknowledgement, identify modifications, and link to the license.
+
+License: https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Referenced upstream manuscripts retain their own licenses. They are not
+redistributed in this package. No endorsement by the named institutions is implied.

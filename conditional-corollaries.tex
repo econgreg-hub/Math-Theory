@@ -1,0 +1,201 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype,enumitem,booktabs}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{assumption}[theorem]{Input}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\F}{\mathbb F}
+\newcommand{\C}{\mathbb C}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Gal}{Gal}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\supp}{supp}
+\title{Conditional Corollaries from the October 2026\newline OpenAI Mathematics Release}
+\author{John Gregory George\\
+\small Center for Economic Analysis, Middle Georgia State University}
+\date{Version 1.0; prepared 7 October 2026}
+\hypersetup{pdftitle={Conditional Corollaries from the October 2026 OpenAI Mathematics Release},pdfauthor={John Gregory George},pdfsubject={Conditional mathematical synthesis; AI contributions disclosed}}
+\begin{document}
+\maketitle
+\begin{center}\small
+Project conception and direction: John Gregory George.\\
+Mathematical synthesis, proof drafting and source checks: ChatGPT (OpenAI).\\
+Motivation and inspiration: Jarvis, George's local AI research system.
+\end{center}
+\begin{abstract}
+We record selected conditional consequences of manuscripts in the October 2026 OpenAI mathematics release. A primitive-root prime lower bound and a quantitative progression-free-set estimate imply disjoint arithmetic-progression packings covering a proportion tending to one of the relevant primes in every sufficiently large dyadic interval. A related matching argument gives prime-polynomial differences. Low-Selmer-corank BSD and quadratic-twist rank statistics imply density-one full BSD over each fixed multiquadratic field; in degree four, at least one third in lower density of rational signed-squarefree parameters give full-BSD twists of rank at least two. Further consequences concern nearly orthogonal binary circulants, Hodge classes on products of K3-associated cubic fourfolds, and idempotents in a 2-adic completion. We state dependencies explicitly and prove the transfer arguments. The cited preprint theorems are assumed, not reproved or certified. Historical priority is not established.
+\end{abstract}
+
+\section{Status, scope and attribution}
+This note records mathematical implications, not independent proofs of the source manuscripts. Every result below is conditional on the precise inputs cited in its statement or section. The major upstream theorems belong to their cited authors. The elementary packing, finite-intersection, decomposition and lifting mechanisms used here are standard; the purpose is to make the particular consequences and their dependencies explicit.
+
+All OpenAI manuscript references are pinned to repository revision
+\begin{center}\small\texttt{adc7f1241b42e322a6451854ab7e4b4c146bf78a}.\end{center}
+The release describes mixed verification status. No Lean verification was rerun for this note. In particular, the official documentation for family 159 states that its selected formalized result is the divergent-reciprocal-sum consequence, excluding the quantitative progression-free-set estimate used in Section~\ref{sec:packing}; see \cite{formal159}. A formalization badge must not be interpreted as certification of that quantitative input.
+
+The arguments were assembled during an AI-assisted review on 7 October 2026. A private preparation date is not a public disclosure timestamp. No assertion of first discovery is made: targeted searches and the absence of an explicitly stated corollary in inspected manuscripts do not establish exhaustive priority. This version has not undergone external peer review.
+
+\paragraph{Contribution disclosure.}
+George conceived and directed the cross-paper synthesis project and requested public documentation and attribution. ChatGPT (OpenAI) performed the source screening, proposed and developed the displayed conditional deductions, conducted mathematical interface and bibliographic checks, and drafted this note, using parallel AI review passes. Those passes are not independent human peer review. Jarvis is acknowledged for motivation and inspiration; no proof in this note is attributed to Jarvis. The human author is the responsible scholarly contact. AI contributions are disclosed explicitly rather than represented as human coauthorship. The institutional affiliation identifies the author; no institutional endorsement is implied.
+
+\section{Packing arithmetic progressions of primitive-root primes}\label{sec:packing}
+For a fixed integer $a$ that is neither $-1$ nor a square, put
+\[
+\mathcal A_a(N)=\{p\text{ prime}:N<p<2N,\ p\nmid a,\ \ord_p(a)=p-1\}.
+\]
+Let $r_k(N)$ be the maximum cardinality of a subset of $[N]=\{1,\ldots,N\}$ containing no $k$-term arithmetic progression with positive common difference.
+
+\begin{assumption}[Primitive-root abundance]\label{in:artin}
+For each fixed admissible $a$, there is $c_a>0$ such that
+\[|\mathcal A_a(N)|\ge c_aN/(\log N)^2\]
+for all sufficiently large $N$. This is the portion of \cite[Theorem 1.1, p.~2]{artin} used here.
+\end{assumption}
+\begin{assumption}[Quantitative progression-free bound]\label{in:ap}
+For each fixed integer $k\ge3$, there exist positive constants $C_k,c_k,\varepsilon_k$ such that
+\[r_k(N)\le C_kN\exp\{-c_k(\log N)^{\varepsilon_k}\}.\]
+We use \cite[Theorem 1.1, p.~4]{ap}.
+\end{assumption}
+
+\begin{lemma}[Maximal-packing remainder]\label{lem:packing}
+Every $A\subseteq[N]$ admits a family of pairwise vertex-disjoint $k$-term arithmetic progressions leaving at most $r_k(N)$ elements uncovered.
+\end{lemma}
+\begin{proof}
+Choose a maximal such family, or repeatedly delete a progression while one exists. The uncovered set contains no progression, since otherwise the family could be enlarged. Its size is therefore at most $r_k(N)$.
+\end{proof}
+
+\begin{theorem}[Near-complete progression packing]\label{thm:artin}
+Assume Inputs~\ref{in:artin} and~\ref{in:ap}. For each fixed admissible $a$ and fixed $k\ge3$, every sufficiently large integer $N$ admits disjoint $k$-term arithmetic progressions in $\mathcal A_a(N)$ whose uncovered set $R_N$ satisfies
+\[
+|R_N|\le C_kN e^{-c_k(\log N)^{\varepsilon_k}},\qquad
+\frac{|R_N|}{|\mathcal A_a(N)|}\longrightarrow0.
+\]
+In particular, eventually there are at least $c_aN/(2k(\log N)^2)$ disjoint progressions.
+\end{theorem}
+\begin{proof}
+Translation by $-N$ puts $\mathcal A_a(N)$ inside $[N]$ and preserves progressions. Apply Lemma~\ref{lem:packing}, then divide by Input~\ref{in:artin}:
+\[
+\frac{|R_N|}{|\mathcal A_a(N)|}
+\le\frac{C_k}{c_a}(\log N)^2e^{-c_k(\log N)^{\varepsilon_k}}=o(1).
+\]
+Eventually at least half the vertices are covered; division by $k$ gives the final bound.
+\end{proof}
+
+\begin{remark}[Scope and prior work]
+The progression length is fixed before $N\to\infty$, and different progressions may have different common differences. This is an existence result without a practical construction or useful threshold claim. Input~\ref{in:artin} alone does not give positive relative density among primes or divergence of the reciprocal sum; neither the usual relative-density Green--Tao theorem nor the selected formalized reciprocal-sum statement can replace Input~\ref{in:ap} without further work. Frei and Tinkov\'a \cite[Theorem 1.2]{constellations} establish stronger primitive-root constellation asymptotics under Hooley-type Riemann hypotheses. The present narrower implication uses the newly stated Inputs~\ref{in:artin}--\ref{in:ap}; it does not claim that the packing method itself is new.
+\end{remark}
+
+\subsection{Prime-polynomial difference matchings}
+\begin{proposition}\label{prop:matching}
+Assume Input~\ref{in:artin} and \cite[Theorem 1.1, p.~1]{polydiff}. Fix an integer $j\ge2$. In every sufficiently large interval $(N,2N)$, disjoint pairs of primes in $\mathcal A_a(N)$, each having difference $(q-1)^j$ for some prime $q$, cover a proportion tending to one of $\mathcal A_a(N)$.
+\end{proposition}
+\begin{proof}
+The polynomial $h(t)=(t-1)^j$ is prime-intersective: the unit $1$ is a root modulo every positive integer. The cited theorem bounds the size of any subset of $[N]$ without a nonzero difference $h(q)$, $q$ prime, by $C_hN^{1-c_h}$ for constants $C_h,c_h>0$. Form the graph on $\mathcal A_a(N)$ joining primes with such a difference, and take a maximal matching. Unmatched vertices form an independent set. After translation its size is at most $C_hN^{1-c_h}$, which divided by Input~\ref{in:artin} is $O_{a,j}((\log N)^2N^{-c_h})=o(1)$.
+\end{proof}
+The witnesses $q$ need not be distinct. Proposition~\ref{prop:matching} and Theorem~\ref{thm:artin} do not imply a progression with common difference $(q-1)^j$: their witnesses need not coincide.
+
+\section{BSD for rational twists over a fixed multiquadratic field}
+For an elliptic curve $E/\Q$, write $E^{(d)}$ for its quadratic twist and set
+\[
+\mathcal D(X)=\{d\in\Z:0<|d|\le X,\ d\text{ squarefree}\}.
+\]
+Every density and mean below uses this signed rational parameter set. Write $r_F(d)=\rank F^{(d)}(\Q)$ and $a_F(d)=\ord_{s=1}L(F^{(d)},s)$.
+
+We assume the following portions of the cited release:
+\begin{enumerate}[label=(\roman*)]
+\item For each fixed $F/\Q$, there is a density-one set on which $r_F(d)=a_F(d)\in\{0,1\}$ and the whole Tate--Shafarevich group is finite; each rank occurs with density $1/2$ \cite[Theorems 1.1--1.2, p.~2]{density}.
+\item Full $q$-power Selmer corank zero or one implies the full BSD formula for elliptic curves over $\Q$ \cite[Theorem 1.1, p.~3]{bsd}.
+\item For the separate all-parameter mean assertion only, the analytic and algebraic mean ranks of $F^{(d)}$ tend to $1/2$ \cite[Theorem 1.1 and Corollary 1.3, pp.~1--2]{mean}.
+\end{enumerate}
+The compatibility of full BSD with products, isogenies and Weil restriction is standard; a convenient primary reference is \cite[Proposition 6]{vanbommel}.
+
+\begin{theorem}[Fixed multiquadratic base change]\label{thm:bsd}
+Fix $E/\Q$ and a multiquadratic field $K/\Q$ of degree $m=2^r$. Assuming (i)--(ii), there is a density-one set $G\subseteq\mathcal D(\infty)$ for which $E^{(d)}/K$ satisfies the full BSD formula and has rank at most $m$. Assuming also (iii), both its mean algebraic rank and its mean analytic rank over all $d\in\mathcal D(X)$ tend to $m/2$.
+\end{theorem}
+\begin{proof}
+For each character $\chi$ of $\Gal(K/\Q)$, let $F_\chi=E\otimes\chi$, a fixed elliptic curve over $\Q$. Apply (i) to each of these $m$ curves, using the same parameter $d$, and intersect the resulting good sets. Since $m$ is fixed, their intersection $G$ has density one. Finite Tate--Shafarevich group identifies the $2$-power Selmer corank with the Mordell--Weil rank, so (ii) gives full BSD for every $F_\chi^{(d)}$ on $G$.
+
+The character decomposition gives a $\Q$-isogeny
+\[
+\Res_{K/\Q}(E^{(d)}_K)\sim_{\Q}\prod_{\chi}F_\chi^{(d)}.
+\]
+The full BSD compatibilities therefore give full BSD for $E^{(d)}/K$ on $G$. They transport all factors of the leading-term formula, including regulators and isogeny indices, not just the $L$-values. Moreover, for every $d$,
+\begin{align}
+R(d):=\rank E^{(d)}(K)&=\sum_\chi r_{F_\chi}(d),\label{eq:rank}\\
+\ord_{s=1}L(E^{(d)}/K,s)&=\sum_\chi a_{F_\chi}(d),\label{eq:analytic}
+\end{align}
+where the second identity follows from the $L$-function factorization. On $G$ the first sum is at most $m$. Under (iii), taking means in the two exact identities proves the all-parameter limits by a finite summation.
+\end{proof}
+
+\begin{corollary}[Positive lower density of higher-rank full-BSD twists]\label{cor:highrank}
+Assume only (i)--(ii) and fix $E,K$ as above with $m\ge2$. Then
+\[
+\liminf_{X\to\infty}\frac{\#\{d\in\mathcal D(X): E^{(d)}/K\text{ satisfies full BSD},\ R(d)\ge m/2\}}{\#\mathcal D(X)}\ge\frac{2}{m+2}.
+\]
+In particular, for any fixed biquadratic $K/\Q$, at least one third in lower density of these rational parameters give full-BSD twists of rank at least two over $K$.
+\end{corollary}
+\begin{proof}
+For each $\chi$, removing the zero-density complement of $G$ does not change the half-density of the event $r_{F_\chi}(d)=1$. Since each component is zero or one on $G$, \eqref{eq:rank} yields
+\[
+\frac1{\#\mathcal D(X)}\sum_{d\in G\cap\mathcal D(X)}R(d)
+=\sum_\chi\frac{\#\{d\in G\cap\mathcal D(X):r_{F_\chi}(d)=1\}}{\#\mathcal D(X)}\longrightarrow\frac m2.
+\]
+Set $b=m/2$ and $p_X=\#\{d\in G\cap\mathcal D(X):R(d)\ge b\}/\#\mathcal D(X)$. On the rest of $G$ the integer $R(d)$ is at most $b-1$, and on $G$ it is always at most $m$. Thus
+\[
+\frac1{\#\mathcal D(X)}\sum_{d\in G\cap\mathcal D(X)}R(d)
+\le (b-1)+(b+1)p_X.
+\]
+Taking lower limits proves $\liminf p_X\ge1/(b+1)=2/(m+2)$. Every parameter counted by $p_X$ satisfies full BSD by Theorem~\ref{thm:bsd}.
+\end{proof}
+
+\begin{remark}
+No independence of the component ranks is used. Assumption (iii) is unnecessary for Corollary~\ref{cor:highrank}; it is needed only for the separate mean over all parameters. Density one alone would not justify that unrestricted mean. The conclusions concern rational twists of a curve descending from $\Q$, with $K$ fixed, rather than all elliptic curves over $K$, all intrinsic $K$-twists, or distinct $K$-isomorphism classes. No uniformity in growing $K$ or exact rank distribution is asserted.
+\end{remark}
+
+\section{Nearly orthogonal binary circulants}
+Assume \cite[Theorem 1, p.~1]{ultraflat}: for every sufficiently large integer $N$ there are signs $\epsilon_j\in\{-1,1\}$ such that
+\[
+P_N(z)=\sum_{j=0}^{N-1}\epsilon_jz^j,\qquad
+\sup_{|z|=1}\left|\frac{|P_N(z)|}{\sqrt N}-1\right|=\eta_N\longrightarrow0.
+\]
+\begin{proposition}
+There exist real circulant $\{-1,1\}$ matrices $C_N$ in every sufficiently large order such that
+\[
+\kappa_2(C_N)\longrightarrow1,\qquad
+\left\|\frac{C_NC_N^*}{N}-I\right\|_{\mathrm{op}}\longrightarrow0.
+\]
+If \cite[Theorem 1.1, p.~1]{circulant} is also assumed, exact equality $C_NC_N^*=NI$ is impossible for $N>4$.
+\end{proposition}
+\begin{proof}
+Take the first row of $C_N$ to be the coefficients of $P_N$. Fourier diagonalization of circulants shows that its singular values are $|P_N(\omega_N^j)|$, where $\omega_N=e^{2\pi i/N}$, up to an immaterial conjugation convention. They lie between $(1-\eta_N)\sqrt N$ and $(1+\eta_N)\sqrt N$. Consequently
+\[
+\kappa_2(C_N)\le\frac{1+\eta_N}{1-\eta_N},\qquad
+\left\|C_NC_N^*/N-I\right\|_{\mathrm{op}}\le2\eta_N+\eta_N^2.
+\]
+The exact nonexistence statement is the cited circulant-Hadamard theorem.
+\end{proof}
+The flat-polynomial/circulant method is already explicit in Steinerberger \cite{steinerberger}. The strengthened asymptotic follows from the newly claimed ultraflat input; neither a new method nor an efficient construction of the signs is claimed.
+
+\input{algebra_geometry_sections.tex}
+
+\section{Interpretation and priority boundary}
+These propositions are short transfer arguments from powerful upstream results. They do not establish the Riemann hypothesis, unrestricted BSD, the unrestricted Hodge conjecture, or an additional Millennium Prize solution. Acceptance of an implication does not certify its premises. Some consequences may already be known, or may be considered immediate by specialists; this note makes no exhaustive novelty claim.
+
+The intended public record identifies exactly what was written, by whom and with which disclosed assistance, at the time a hosting service actually publishes it. It cannot certify absence of earlier work. Corrections, stronger source theorems, and overlooked precedents should be recorded in dated revisions with the earlier versions retained.
+
+\begingroup\small
+\input{references.tex}
+\endgroup
+\end{document}

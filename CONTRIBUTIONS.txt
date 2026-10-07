@@ -1,0 +1,27 @@
+CONTRIBUTIONS AND AI DISCLOSURE
+
+John Gregory George:
+- Conceived and directed the search for mathematical connections across the release.
+- Requested the exploration of both natural and unconventional combinations.
+- Requested public documentation, clear attribution and preservation of the record.
+- Named human author and responsible scholarly contact.
+
+ChatGPT (OpenAI):
+- Screened the source collection's stated results and performed targeted reading.
+- Proposed the selected conditional consequences and developed the displayed proofs.
+- Checked mathematical interfaces, sources and selected prior literature.
+- Drafted and formatted the note and prepared the source package.
+- Used parallel AI review passes; these are not independent human peer review.
+
+Jarvis:
+- George's local AI research system, acknowledged for motivation and inspiration.
+- No mathematical proof in this note is attributed to Jarvis.
+
+The source manuscripts' major theorems belong to their cited authors. The note
+does not claim an independent proof of those theorems or exhaustive novelty.
+OpenAI and Middle Georgia State University have not endorsed this downstream note.
+No human verification is represented as completed merely because AI passes were run.
+
+For arXiv, John Gregory George is the author. Its policy calls for disclosure
+of significant AI use and says generative AI tools should not be listed as authors:
+https://info.arxiv.org/help/moderation/index.html

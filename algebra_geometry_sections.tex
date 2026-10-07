@@ -1,0 +1,212 @@
+\section{Products of cubic fourfolds with geometric K3 categories}
+\label{sec:cubic-products}
+
+The assertions in this section are conditional on the specified theorem in the
+OpenAI release.  The argument supplies a corollary of that theorem through an
+established motivic comparison; it does not independently verify the released
+proof or establish priority for the corollary.
+
+\begin{assumption}[K3-product input]
+\label{ass:k3-products}
+Theorem~1.1 of \cite{k3} holds: for every finite list of smooth projective
+complex K3 surfaces $S_1,\ldots,S_m$, allowing repeated factors, and every
+integer $p$, the rational cycle-class map
+\[
+ \mathrm{CH}^{p}(S_1\times\cdots\times S_m)_{\mathbb Q}
+ \longrightarrow
+ H^{2p}(S_1\times\cdots\times S_m,\mathbb Q)
+       \cap H^{p,p}(S_1\times\cdots\times S_m,\mathbb C)
+\]
+is surjective.  The intersection is taken after extension of scalars to
+complex cohomology.
+\end{assumption}
+
+\begin{proposition}[Rational Hodge for products of geometric-K3 cubics]
+\label{prop:cubic-products}
+Assume Assumption~\ref{ass:k3-products}.  Let $X_1,\ldots,X_r$ be smooth
+complex cubic fourfolds, with $r\geq 1$.  For each $i$, suppose there is a
+smooth projective complex K3 surface $S_i$ and a Fourier--Mukai equivalence
+\[
+ \operatorname{Ku}(X_i)\simeq D^b(\operatorname{Coh}S_i),
+\]
+where $\operatorname{Ku}(X_i)$ is the Kuznetsov component and the K3 category
+on the right is untwisted.  Then the rational Hodge conjecture holds in every
+codimension on $X_1\times\cdots\times X_r$.  In particular, it holds on every
+self-power of each such cubic fourfold.
+\end{proposition}
+
+\begin{proof}
+We work with Chow motives over $\mathbb C$ with rational coefficients, using
+the convention that $\mathbb Q(-1)$ has its Betti realization in degree two.
+The algebraic and transcendental Chow--K\"unneth decomposition for a smooth
+cubic fourfold, as recalled in \cite[\S5.2]{fuvial}, gives
+\[
+ h(X_i)\simeq
+ \mathbb Q(0)\oplus\mathbb Q(-1)
+ \oplus\mathbb Q(-2)^{\oplus a_i}
+ \oplus h^4_{\mathrm{tr}}(X_i)
+ \oplus\mathbb Q(-3)\oplus\mathbb Q(-4),
+\]
+where $a_i$ is the dimension of its rational algebraic middle cohomology.
+Fu--Vial's theorem \cite[Theorem~3, equivalently Theorem~7.2]{fuvial}
+applies to the stated Fourier--Mukai equivalence and gives an isomorphism
+of rational Chow motives
+\[
+ h^4_{\mathrm{tr}}(X_i)(2)
+       \simeq h^2_{\mathrm{tr}}(S_i)(1).
+\]
+Thus the non-Tate summand of $h(X_i)$ is isomorphic to
+$h^2_{\mathrm{tr}}(S_i)(-1)$, itself an algebraic direct summand of a Tate
+twist of $h(S_i)$.  These isomorphisms and their inverses are algebraic
+correspondences, not merely isomorphisms of Hodge structures.
+
+Tensor the displayed decompositions for all $i$.  Each summand of
+$h(X_1\times\cdots\times X_r)$ is isomorphic to an algebraic direct
+summand of a Tate twist of $h(\prod_{i\in I}S_i)$ for some subset
+$I\subseteq\{1,\ldots,r\}$; for $I=\varnothing$ it is a Tate motive.
+Assumption~\ref{ass:k3-products} applies to every nonempty such product.
+Its conclusion passes to algebraic direct summands: if $\pi$ is the
+corresponding algebraic projector and $\alpha$ is a Hodge class in its
+image, first represent $\alpha$ by an algebraic cycle $z$ on the full
+product and then use $\pi_*z$.  Tate twists only shift the degree and
+codimension.  Finally transport these cycle classes through the inverse
+algebraic correspondences and sum the components.  This represents every
+rational Hodge class on the cubic product by an algebraic cycle.
+\end{proof}
+
+\begin{proposition}[Application to the released irrational cubics]
+\label{prop:irrational-cubics}
+Assume Assumption~\ref{ass:k3-products} and Theorem~1.1 of \cite{cubic}.
+For every sufficiently large admissible Hassett discriminant $d$, a very
+general smooth cubic fourfold $X$ in the Hassett divisor $\mathcal C_d$
+is irrational and satisfies the rational Hodge conjecture on every
+self-power.  More generally, the rational Hodge conjecture holds on every
+finite product of cubics chosen in these very-general loci, even when the
+discriminants differ.
+\end{proposition}
+
+\begin{proof}
+The cited cubic theorem supplies irrationality and an exact complex-linear
+equivalence of $\operatorname{Ku}(X)$ with the ordinary derived category
+of a smooth projective K3 surface.  For this untwisted target the equivalence
+is Fourier--Mukai, as recorded following Theorem~3 of \cite{fuvial}.
+Proposition~\ref{prop:cubic-products} therefore applies to any finite list
+of these cubics.
+\end{proof}
+
+\begin{remark}
+Here admissible means $d>6$, $d\equiv 0$ or $2\pmod 6$, with $4\nmid d$,
+$9\nmid d$, and no odd prime congruent to $2\pmod 3$ dividing $d$, as in
+\cite{cubic}.  The discriminant threshold is ineffective, and ``very
+general'' is interpreted separately in each $\mathcal C_d$.  The proposition
+does not assert the Hodge conjecture for all cubic fourfolds, the full Hodge
+conjecture, or stable irrationality.  The correspondence bridge is an
+established theorem of Fu and Vial; the release supplies the K3-product and
+irrationality inputs.  Novelty of the combined corollary is not established.
+\end{remark}
+
+\section{Idempotent lifting with necessarily infinite support}
+\label{sec:adic-support}
+
+Write $\mathbb Z_2$ for the ring of $2$-adic integers and
+$\mathbb F_2$ for the field with two elements.  For a discrete group $G$,
+$R[G]$ denotes its ordinary group ring: all its elements have finite group
+support.  The completion below completes coefficients; it does not replace
+$G$ by a profinite group.
+
+\begin{assumption}[The two group-ring inputs]
+\label{ass:group-rings}
+The following statements from the release hold.
+\begin{enumerate}
+\item Theorem~1.1 of \cite{group2}: there exist a finitely presented
+      torsion-free group $G$ with a finite two-dimensional classifying
+      complex and $a,b,c\in\mathbb F_2[G]$ satisfying
+      $ab=1$, $ac=0$, and $c\neq 0$.
+\item Corollary~1.2(ii) of \cite{idempotent}: for every torsion-free
+      discrete group $H$ and every commutative unital characteristic-zero
+      domain $R$, the only idempotents of $R[H]$ are $0$ and $1$.
+\end{enumerate}
+The second statement concerns scalar ring elements, not arbitrary matrices.
+\end{assumption}
+
+\begin{proposition}[Completion creates an idempotent requiring infinite support]
+\label{prop:adic-support}
+Assume Assumption~\ref{ass:group-rings}, and take its group $G$ and elements
+$a,b,c$.  Set
+\[
+ A=\mathbb Z_2[G],\qquad
+ \widehat A=\varprojlim_{n\geq1}(\mathbb Z/2^n\mathbb Z)[G],
+ \qquad e=1-ba\in\mathbb F_2[G].
+\]
+Then $e$ is a nontrivial idempotent and lifts to an idempotent of
+$\widehat A$.  The ring $A$ has no nontrivial idempotents, and every
+idempotent of $\widehat A$ reducing to $e$ has infinite support in $G$.
+For every compatible sequence of idempotents
+\[
+ E_n\in(\mathbb Z/2^n\mathbb Z)[G],\qquad E_1=e,
+\]
+the finite numbers $|\operatorname{supp}E_n|$ tend to infinity as
+$n\to\infty$.
+\end{proposition}
+
+\begin{proof}
+First $ba\neq 1$, since otherwise
+$c=(ba)c=b(ac)=0$.  As $ab=1$, we have $(ba)^2=b(ab)a=ba$, and hence
+$e^2=e$.  The element $e$ is nonzero.  It is not $1$: if $ba=0$, then
+$b=b(ab)=(ba)b=0$, contradicting $ab=1$.
+
+Choose a finite-support integral lift $x_0\in\mathbb Z[G]\subset A$ of
+$e$.  Define recursively
+\[
+ x_{j+1}=3x_j^2-2x_j^3,\qquad q_j=x_j^2-x_j.
+\]
+The following identities hold in any unital ring:
+\[
+ q_{j+1}=q_j^2(4q_j-3),\qquad
+ x_{j+1}-x_j=(1-2x_j)q_j.
+\]
+Indeed, they are polynomial identities in the single element $x_j$ and
+central integer scalars, so noncommutativity of the ambient ring causes
+no issue.  Since $q_0\in2A$, induction gives
+$q_j\in2^{2^j}A$.  The second identity makes $(x_j)$ a $2$-adic Cauchy
+sequence.  Its limit $E\in\widehat A$ satisfies $E^2=E$ and reduces to
+$e$ modulo $2$, so it is nontrivial.
+
+For clarity, an element of $\widehat A$ can be identified with a
+coefficient family $(u_g)_{g\in G}$ in $\mathbb Z_2$ such that, for every
+$n$, only finitely many $u_g$ are nonzero modulo $2^n$.  Its support is
+$\{g:u_g\neq0\}$.  Such an element has finite support exactly when it
+lies in the natural embedded copy of $A$.
+
+The second input, with $R=\mathbb Z_2$ and $H=G$, excludes every
+nontrivial idempotent of $A$.  Thus any idempotent lift of $e$ in
+$\widehat A$ has infinite support.  For a compatible sequence $(E_n)$,
+its limit is such a lift.  Compatibility makes the sets
+$\operatorname{supp}E_n$ nested, and their union is the infinite support
+of the limit.  A nested sequence of finite sets with infinite union has
+cardinalities tending to infinity, proving the last assertion.
+\end{proof}
+
+\begin{proposition}[Failure of direct finiteness after completion]
+\label{prop:adic-direct-finiteness}
+The first input of Assumption~\ref{ass:group-rings} alone implies that
+$\widehat A$ is not directly finite: there exist $U,V\in\widehat A$
+with $UV=1$ and $VU\neq1$.
+\end{proposition}
+
+\begin{proof}
+Choose finite-support lifts $A_0,B_0\in A$ of $a,b$.  Then
+$A_0B_0=1+2C$ for some $C\in A$.  The geometric series
+$\sum_{j\geq0}(-2C)^j$ converges in $\widehat A$ and is a two-sided
+inverse of $A_0B_0$.  Put
+$U=A_0$ and $V=B_0(A_0B_0)^{-1}$.  Then $UV=1$, whereas
+$VU$ reduces to $ba\neq1$ modulo $2$.
+\end{proof}
+
+\begin{remark}
+The obstruction is finite support, not the existence of lifts at finite
+precision.  No quantitative lower bound on support growth is asserted.
+The lifting polynomials and the geometric-series argument are standard
+completion methods; the conditional separation combines them with the
+specified release inputs.  Its prior publication status is not established.
+\end{remark}

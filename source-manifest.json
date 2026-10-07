@@ -1,0 +1,128 @@
+{
+  "repository": "https://github.com/openai/math",
+  "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "reviewed": "2026-10-07",
+  "source_theorems_independently_verified": false,
+  "sources": [
+    {
+      "paper_id": "029-01",
+      "path": "preprints/Primitive-roots-for-every-admissible-integer-base-October-4-2026/primitive-roots-all-integer-bases.pdf",
+      "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "status": "ok",
+      "bytes": 891737,
+      "sha256": "671ac4b3ece879f614ed8f4b782e61a07805e533f385a694fe4d7afbda3c9365",
+      "characters": 352743,
+      "pages": 92
+    },
+    {
+      "paper_id": "159-01",
+      "path": "preprints/Quasipolynomial-Bounds-for-Arithmetic-Progressions-September-23-2026/paper.pdf",
+      "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "status": "ok",
+      "bytes": 1510724,
+      "sha256": "481eaf7730dc4d581e5270cc4d514c6ee2ec386d5af643cf914e20b4d00c59be",
+      "characters": 776357,
+      "pages": 198
+    },
+    {
+      "paper_id": "182-02",
+      "path": "preprints/A-Power-Saving-for-Polynomial-Differences-at-Prime-Arguments-October-5-2026/prime-argument-polynomial-differences.pdf",
+      "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "status": "ok",
+      "bytes": 674642,
+      "sha256": "b42ac864305ade86faecfe7a599249cf07a47681d7ce2008b51f6c8a3591f819",
+      "characters": 157742,
+      "pages": 42
+    },
+    {
+      "paper_id": "002-01",
+      "path": "preprints/Exact-Birch-Swinnerton-Dyer-Formula-from-Low-Selmer-Corank-October-3-2026/exact-bsd-low-selmer-corank.pdf",
+      "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "status": "ok",
+      "bytes": 874733,
+      "sha256": "8911defe691a678c9417ca73c7e93357aceba3567089be560715596c67228466",
+      "characters": 362418,
+      "pages": 94
+    },
+    {
+      "paper_id": "006-01",
+      "path": "preprints/Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-September-23-2026/paper.pdf",
+      "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "status": "ok",
+      "bytes": 1088074,
+      "sha256": "0548f28606fea1a4654626c7680805abd227419c5de2dd633f35a3ddd0e0aede",
+      "characters": 480710,
+      "pages": 130
+    },
+    {
+      "paper_id": "006-02",
+      "path": "preprints/The-mean-analytic-rank-of-quadratic-twists-of-elliptic-curves-September-23-2026/paper.pdf",
+      "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "status": "ok",
+      "bytes": 559854,
+      "sha256": "e92807014d890b8f6114b6b51fd70bc8e70322a465494a590b2311282687e386",
+      "characters": 155030,
+      "pages": 41
+    },
+    {
+      "paper_id": "076-01",
+      "path": "preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/ultraflat-real-littlewood-polynomials.pdf",
+      "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "status": "ok",
+      "bytes": 391048,
+      "sha256": "89e4fd2beb7f4dabc5123c83eb291aaf463000e4a27652456f76363932ac0d60",
+      "characters": 59010,
+      "pages": 16
+    },
+    {
+      "paper_id": "179-01",
+      "path": "preprints/The-circulant-Hadamard-conjecture-September-23-2026/paper.pdf",
+      "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "status": "ok",
+      "bytes": 371693,
+      "sha256": "68f1d360a86238733b5d94bc2d0d091749cbb867faa3e35fd2de79e070aa7022",
+      "characters": 48179,
+      "pages": 15
+    },
+    {
+      "paper_id": "032-01",
+      "path": "preprints/The-rational-Hodge-conjecture-for-products-of-K3-surfaces-October-4-2026/hodge-conjecture-products-k3.pdf",
+      "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "status": "ok",
+      "bytes": 639139,
+      "sha256": "29df1aaedad72d55501e39c512e4d9c3d3bc8ac38d2fc147657dc7402567f900",
+      "characters": 244757,
+      "pages": 65
+    },
+    {
+      "paper_id": "054-01",
+      "path": "preprints/Irrational-cubic-fourfolds-with-geometric-K3-categories-September-24-2026/Irrational-cubic-fourfolds-with-geometric-K3-categories-September-24-2026.pdf",
+      "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "status": "ok",
+      "bytes": 673102,
+      "sha256": "4f870a96114f1ac89a5fe55b4eb13f17a2690446f82ff28aa7829199a7832952",
+      "characters": 231400,
+      "pages": 62
+    },
+    {
+      "paper_id": "197-01",
+      "path": "preprints/A-Torsion-Free-Group-Algebra-That-Is-Not-Directly-Finite-October-4-2026/direct-finiteness.pdf",
+      "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "status": "ok",
+      "bytes": 517870,
+      "sha256": "7950476863f21811aaccb99ab12f24f81741e5077ca290394d029063024aaee8",
+      "characters": 111839,
+      "pages": 31
+    },
+    {
+      "paper_id": "207-02",
+      "path": "preprints/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026.pdf",
+      "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "status": "ok",
+      "bytes": 457936,
+      "sha256": "1c4d90b5ed4de2ef66b4b07b3d5c3e2bfe8822a538177c64ee1d3c3e091120bf",
+      "characters": 111100,
+      "pages": 33
+    }
+  ]
+}
